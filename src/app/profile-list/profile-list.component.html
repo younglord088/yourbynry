@@ -1,0 +1,6 @@
+<p>profile-list works!</p>
+<div *ngFor="let profile of profiles">
+  <h3>{{ profile.name }}</h3>
+  <p>{{ profile.description }}</p>
+  <button (click)="showMap(profile.address)">Show Address on Map</button>
+</div>
